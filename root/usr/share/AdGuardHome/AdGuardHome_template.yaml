@@ -1,5 +1,5 @@
-#提交就可以直接用的配置模板文件。 user: root/password: admin
-#a template config can be use with a apply. user: root/password: admin
+#提交就可以直接用的配置模板文件。 user: admin/password: admin
+#a template config can be use with a apply. user: admin/password: admin
 
 bind_host: 0.0.0.0
 #上方的bind_host: 0.0.0.0可根据自己的情况修改，比如路由IP或者保留。
@@ -7,8 +7,8 @@ bind_host: 0.0.0.0
 
 bind_port: 3000
 users:
-- name: root
-  password: $2y$10$ML7v5WXsM1xN12YpR15f4uSGGAzk.QXhwu99lczQ8NgrPcTYRY9Ei
+- name: admin
+  password: $2y$10$vHRcARdPCieYG3RXWomV5evDYN.Nj/edtwEkQgQJZcK6z7qTLaIc6
 language: ""
 rlimit_nofile: 0
 dns:

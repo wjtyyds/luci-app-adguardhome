@@ -8,7 +8,7 @@ local configpath=uci:get("AdGuardHome","AdGuardHome","configpath") or "/etc/AdGu
 local binpath=uci:get("AdGuardHome","AdGuardHome","binpath") or "/usr/bin/AdGuardHome/AdGuardHome"
 httpport=uci:get("AdGuardHome","AdGuardHome","httpport") or "3000"
 m = Map("AdGuardHome", "AdGuard Home")
-m.description = translate("Free and open source, powerful network-wide ads & trackers blocking DNS server.") .. " <font color='red'><b>默认账号：root，默认密码：admin</b></font>"
+m.description = translate("Free and open source, powerful network-wide ads & trackers blocking DNS server.") .. "，默认账号和密码均为：admin"
 m:section(SimpleSection).template  = "AdGuardHome/AdGuardHome_status"
 
 s = m:section(TypedSection, "AdGuardHome")
